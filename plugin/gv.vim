@@ -247,7 +247,7 @@ endfunction
 
 function! s:list(fugitive_repo, log_opts)
   "let default_opts = ['--color=never', '--date=short', '--format=%cd %h%d %s (%an)'] "XXX laoshaw
-  let default_opts = ['--color=never', '--date=short', '--format=%cd %h%d %s (%an)', '--reverse', '--after="2019-01-01"']
+  let default_opts = ['--color=never', '--date=short', '--format=%cd %h%d %s (%an)', '--reverse', '--after="2018-11-20"', '--author=Philipp']
   let git_args = ['log'] + default_opts + a:log_opts
   let git_log_cmd = call(a:fugitive_repo.git_command, git_args, a:fugitive_repo)
 
